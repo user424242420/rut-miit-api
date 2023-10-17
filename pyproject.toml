@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "rut-miit-api"
+version = "0.0.1-dev2"
+description = "Wrapper for rut miit app api"
+authors = ["user424242420 <142989209+user424242420@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/user424242420/rut-miit-api"
+keywords = ["rut-miit"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests-cache = "^1.1.0"
+logging = "^0.4.9.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
